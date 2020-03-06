@@ -1,2 +1,2 @@
 print('test file 3')
-print('miaooow')
+print('lalala merge conflict')
