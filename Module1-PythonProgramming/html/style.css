@@ -1,0 +1,12 @@
+h2, h1 {
+    color: green;
+    animation-name: example;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes example {
+    0% {color: red;}
+    50% {color: blue;}
+    100% {color: red;}
+}

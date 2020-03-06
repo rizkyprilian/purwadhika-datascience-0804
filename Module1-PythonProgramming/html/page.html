@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <style>
+        html,
+        body {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            margin: 0 auto;
+        }
+
+        table, th, td {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            padding: 1em;
+        }
+
+        th {
+            font-style: italic;
+        }
+
+        tr:nth-child(even) {
+            background-color: gray;
+            color: white;
+        }
+
+        section {
+            margin: 0 auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <h2>Hellooooo is it me you're looking for??</h2>
+    <!-- This is comment -->
+    <p><a href="http://google.com">&nbsp;Google</a></p>
+    <img id="meow" src="https://gfycat.com/blondedibleamphiuma" alt="LeMiaow">
+
+    <!-- <b>Ini bold</b>
+    <strong>Setroooooonnnggg</strong>
+    <i>Italic</i>
+    <em>Emphasized</em>
+    <mark>Marked</mark>
+    <small>Small</small>
+    <del>Deleted</del>
+    <ins>Inserted</ins>
+    <sub>Subscript</sub>
+    <sup>Superscript</sup> -->
+    <section>
+        <table class="table">
+            <tr>
+                <th>Nama</th>
+                <th>TTL</th>
+            </tr>
+            <tr>
+                <td>Galih</td>
+                <td>Jepara, 25 Januari 1992</td>
+            </tr>
+        </table>
+    </section>
+
+    <br/><br>
+
+    <section>
+        <form action="">
+            <p>Nama <input type="text" name="nama"> </p>
+            <p>Usia <input type="number" name="usia"></p>
+            <p><input type="radio" name="sex" value="p"> Pria</p>
+            <p><input type="radio" name="sex" value="w" checked> Wanita</p>
+
+            <p></p>
+            <p><input type="submit"></p>
+        </form>
+    </section>
+
+    <br><br>
+
+    <section>
+        <table>
+            <tr>
+                <th><mark>Rank</mark></th>
+                <th><mark>Club</mark></th>
+                <th><mark>Logo</mark></th>
+                <th><mark>Function</mark></th>
+                <th><mark>Level</mark></th>
+                <th><mark>OK</mark></th>
+            </tr>
+            <tr>
+                <td>1st</td>
+                <td><strong>Barcelona <sub>FC</sub></strong></td>
+                <td><img src="https://s.republika.co.id/uploads/images/inpicture_slide/logo-barcelona-_141231073313-614.jpg" width="100" alt=""></td>
+                <td>2x<sup>3</sup> + 3x<sup>2</sup> - x - 13 = 0</td>
+                <td>
+                    <input type="radio" name="barcelona-radio" value="j">Junior
+                    <input type="radio" name="barcelona-radio" value="p" checked>Professional
+                </td>
+                <td><button>Edit</button></td>
+            </tr>
+            <tr>
+                <td>2nd</td>
+                <td><strong>Bayern <sub>Munich</sub></strong></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg/240px-Logo_FC_Bayern_M%C3%BCnchen_%282002%E2%80%932017%29.svg.png" width="100" alt=""></td>
+                <td>2x<sup>3</sup> + 3x<sup>2</sup> - x - 13 = 0</td>
+                <td>
+                    <input type="radio" name="munchen-radio" value="j" checked>Junior
+                    <input type="radio" name="munchen-radio" value="p">Professional
+                </td>
+                <td><button>Edit</button></td>
+            </tr>
+            <tr>
+                <td>3rd</td>
+                <td><strong>Real <sub>Madrid</sub></strong></td>
+                <td><img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" width="100" alt=""></td>
+                <td>2x<sup>3</sup> + 3x<sup>2</sup> - x - 13 = 0</td>
+                <td>
+                    <input type="radio" name="meded-radio" value="j" checked>Junior
+                    <input type="radio" name="meded-radio" value="p">Professional
+                </td>
+                <td><button>Edit</button></td>
+            </tr>
+        </table>
+    </section>
+
+    <script>
+        function getRandomArbitrary(min, max) {
+            return Math.floor(Math.random() * (max - min) + min);
+            }
+
+        window.onload = function(){
+            document.getElementById('meow').src = 'https://placekitten.com/'+getRandomArbitrary(500,1000)+'/360';
+        }
+    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+</body>
+</html>
